@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 import {
   ActionSheet,
   ActionSheetController,
@@ -13,6 +14,7 @@ import { ConferenceData } from '../../providers/conference-data';
 
 import { SessionDetailPage } from '../session-detail/session-detail';
 import { SpeakerDetailPage } from '../speaker-detail/speaker-detail';
+import { BusinessnewsProvider } from '../../providers/businessnews/businessnews';
 
 // TODO remove
 export interface ActionSheetButton {
@@ -36,13 +38,16 @@ export class SpeakerListPage {
     public navCtrl: NavController,
     public confData: ConferenceData,
     public config: Config,
-    public inAppBrowser: InAppBrowser
+    public inAppBrowser: InAppBrowser,
+    private businessnews: BusinessnewsProvider
   ) {}
 
   ionViewDidLoad() {
     this.confData.getSpeakers().subscribe((speakers: any[]) => {
       this.speakers = speakers;
     });
+
+    console.log(this.businessnews.businessnews());
   }
 
   goToSessionDetail(session: any) {
