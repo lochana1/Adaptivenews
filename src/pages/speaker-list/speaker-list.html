@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Newsroom</ion-title>
+    <ion-title>Newsroom </ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -12,29 +12,29 @@
     <ion-grid fixed>
       <ion-row align-items-stretch>
 
-        <ion-col col-12 col-md-6 align-self-stretch align-self-center *virtualItem="let speaker" approxItemHeight="457px">
 
+        <ion-col col-12 col-md-6 align-self-stretch align-self-center *virtualItem="let speaker" approxItemHeight="457px">
+          <button ion-item *ngFor="let news of bnews.articles" >
           <ion-card class="speaker-card">
             <ion-card-header>
               <button ion-item detail-none (click)="goToSpeakerDetail(speaker)">
                 <ion-avatar item-start>
                   <img [src]="speaker.profilePic" alt="Speaker profile pic">
                 </ion-avatar>
-                {{speaker.name}}
+                <!--{{speaker.name}}-->
+                Business News
               </button>
             </ion-card-header>
 
-            <ion-card-content class="outer-content">
-              <ion-list>
-                <button ion-item *ngFor="let session of speaker.sessions" (click)="goToSessionDetail(session)">
-                  <h3>{{session.name}}</h3>
-                </button>
-
-                <button ion-item (click)="goToSpeakerDetail(speaker)">
-                  <h3>About {{speaker.name}}</h3>
-                </button>
+              <ion-card-content padding text-wrap class="outer-content">
+                <ion-list>
+                  <h2>Title: {{news.title}}</h2>
+                  <h3>Author: {{news.author}}</h3>
+                  <p>Description: {{news.description}}</p>
               </ion-list>
-            </ion-card-content>
+              </ion-card-content>
+
+
 
             <ion-row no-padding>
               <button ion-button clear small color="primary" icon-start >
@@ -60,19 +60,14 @@
                   <ion-icon name="logo-twitter"></ion-icon>
                   Tweet
                 </button>
-
-
                 <button  ion-button clear small color="primary" icon-start (click)="openSpeakerShare(speaker)">
                   <ion-icon name='share-alt'></ion-icon>
                   Share
                 </button>
-
-
-
-
             </ion-row>
 
           </ion-card>
+          </button>
 
         </ion-col>
       </ion-row>

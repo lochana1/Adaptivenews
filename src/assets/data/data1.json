@@ -1,0 +1,246 @@
+{
+  "status": "ok",
+  "totalResults": 20,
+  "articles": [
+    {
+      "source": {
+        "id": "usa-today",
+        "name": "USA Today"
+      },
+      "author": "Eli Blumenthal",
+      "title": "Farewell, Toys R Us and thanks for the memories",
+      "description": "Toys R Us may be going away, but the memories will stay forever.",
+      "url": "https://www.usatoday.com/story/money/2018/03/16/farewell-toys-r-us-and-thanks-memories/429990002/",
+      "urlToImage": "https://www.gannett-cdn.com/-mm-/46c569241ff93660ca86d7ee531f519c4914c39c/c=0-851-2523-2276&r=x1683&c=3200x1680/local/-/media/2018/03/15/USATODAY/USATODAY/636567247831729503-AFP-536090987-69383630.JPG",
+      "publishedAt": "2018-03-16T11:01:13Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Nj.com"
+      },
+      "author": "Matt Dowling | NJ Advance Media for NJ.com",
+      "title": "Commuter alert: NJ Transit trains to NY suspended due to bridge stuck open",
+      "description": "Midtown direct trains are being diverted to Hoboken and NJ Transit is cross-honoring tickets on buses as well as the PATH",
+      "url": "http://www.nj.com/news/index.ssf/2018/03/nj_transit_trains_to_ny_suspended_due_to_bridge_st.html",
+      "urlToImage": "http://image.nj.com/home/njo-media/width620/img/ledgerupdates_impact/photo/2018/03/16/24270482-standard.jpeg",
+      "publishedAt": "2018-03-16T10:25:08Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Qz.com"
+      },
+      "author": null,
+      "title": "Amazon has a secret way of judging the success of its TV shows",
+      "description": null,
+      "url": "https://qz.com/1230364/amazon-has-a-secret-way-of-judging-the-success-of-its-tv-shows/",
+      "urlToImage": null,
+      "publishedAt": "2018-03-16T10:21:27Z"
+    },
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "Eliza Ronalds-Hannon, Matthew Townsend, Lauren Coleman-Lochner",
+      "title": "Behind the Breakneck Unraveling of Toys 'R' Us",
+      "description": "You want a trip to Toys “R” Us, head office of Geoffrey the Giraffe, to feel like a visit to a sugarplum Toyland.",
+      "url": "https://www.bloomberg.com/news/articles/2018-03-16/who-killed-geoffrey-the-giraffe-the-last-days-of-toys-r-us",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i_YyKVkbY6hg/v1/1200x800.jpg",
+      "publishedAt": "2018-03-16T10:16:15Z"
+    },
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "Bruce Einhorn, Prudence Ho",
+      "title": "Hong Kong's Richest Man Li Ka-shing Retires",
+      "description": "Li Ka-shing, a wartime refugee who used to sweep factory floors in Hong Kong for a living, retired after a career spanning more than half a century amassing one of Asia’s biggest fortunes from building skyscrapers to selling soap bars.",
+      "url": "https://www.bloomberg.com/news/articles/2018-03-16/li-ka-shing-retires-ending-career-of-one-of-asia-s-top-tycoons",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iAZlnz76MJQk/v0/1200x800.jpg",
+      "publishedAt": "2018-03-16T10:10:57Z"
+    },
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "Matthew Boyle",
+      "title": "Walmart Whistle-Blower Claims Cheating in Race With Amazon",
+      "description": "The reaction to a whistle-blower’s allegations of improprieties at Walmart Inc.’s online business was sharp. The stock suffered its worst intraday decline in two weeks, showing just how deep the worries are over the company’s growth engine.",
+      "url": "https://www.bloomberg.com/news/articles/2018-03-16/walmart-whistle-blower-suit-renews-jitters-about-amazon-battle",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iWQpQLHra1A4/v1/1200x800.jpg",
+      "publishedAt": "2018-03-16T09:32:28Z"
+    },
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "Yalman Onaran",
+      "title": "Bear Stearns Lives On Inside JPMorgan",
+      "description": "Ten years ago today, JPMorgan Chase & Co. announced it would buy collapsing investment bank Bear Stearns Cos. for pennies on the dollar after a weekend of emergency talks brokered by the government to avert a financial crisis.",
+      "url": "https://www.bloomberg.com/news/articles/2018-03-16/bear-stearns-lives-on-within-jpmorgan-10-years-after-fire-sale",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i_KQdoFpPeOU/v0/1200x710.png",
+      "publishedAt": "2018-03-16T09:30:54Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes.com"
+      },
+      "author": "Yue Wang",
+      "title": "China Is Stepping Up Its Efforts To Draw Tech Giants Like Alibaba And Baidu Back Home",
+      "description": "One by one China's tech stars have gone public in overseas bourses, lured by the prestige and capital from international offerings. Now Beijing is sparing no effort to win them back.",
+      "url": "https://www.forbes.com/sites/ywang/2018/03/16/china-is-stepping-its-up-efforts-to-draw-tech-giants-like-alibaba-and-baidu-back-home/",
+      "urlToImage": "https://thumbor.forbes.com/thumbor/600x315/smart/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F41926328%2F960x0.jpg%3Ffit%3Dscale",
+      "publishedAt": "2018-03-16T09:10:00Z"
+    },
+    {
+      "source": {
+        "id": "cnbc",
+        "name": "CNBC"
+      },
+      "author": "Arjun Kharpal",
+      "title": "CEO of firm that modified BlackBerry, Samsung phones to 'knowingly' help drug cartels evade police is indicted",
+      "description": "Phantom Secure sold modified Samsung and BlackBerry phones that it marketed as \"uncrackable\".",
+      "url": "https://www.cnbc.com/2018/03/16/ceo-of-firm-that-modified-blackberry-samsung-phones-to-knowingly-help-drug-cartels-evade-police-is-indicted.html",
+      "urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/03/16/105069781-GettyImages-147363360.1910x1000.jpg",
+      "publishedAt": "2018-03-16T09:01:00Z"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Reuters",
+      "title": "Former Qualcomm chairman explores long-shot bid for US chip maker: sources",
+      "description": "",
+      "url": "http://www.businessinsider.com/r-former-qualcomm-chairman-explores-long-shot-bid-for-us-chip-maker-sources-2018-3",
+      "urlToImage": null,
+      "publishedAt": "2018-03-16T08:46:15Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Journalnow.com"
+      },
+      "author": "Richard Craver",
+      "title": "Wells Fargo CEO gets 35 percent bump in 2017 total compensation",
+      "description": "A sharp increase in the value of Wells Fargo &amp; Co. stock awards enabled its chief executive, Timothy Sloan, to receive a 34.9 percent jump in 2017 total compensation to",
+      "url": "http://www.journalnow.com/business/business_news/wells-fargo-ceo-gets-percent-bump-in-total-compensation/article_5ec10a55-570e-5874-ac8d-4b12e2b50125.html",
+      "urlToImage": "https://bloximages.newyork1.vip.townnews.com/journalnow.com/content/tncms/assets/v3/editorial/e/61/e6128ab4-c150-5de3-a0ce-65ed77722346/5aaad88634fc5.image.jpg?crop=1565%2C1174%2C99%2C0&resize=840%2C630&order=crop%2Cresize",
+      "publishedAt": "2018-03-16T04:00:20Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Seattletimes.com"
+      },
+      "author": "MICHAEL KUNZELMAN",
+      "title": "Appeals court lifts halt to Louisiana pipeline construction",
+      "description": "BATON ROUGE, La. (AP) — A company may resume construction of a crude oil pipeline in a Louisiana swamp, a project that has been on hold for nearly three weeks, an appeals court ruled Thursday. A lower-court judge had suspended...",
+      "url": "https://www.seattletimes.com/business/appeals-court-lifts-halt-to-louisiana-pipeline-construction/",
+      "urlToImage": "https://www.seattletimes.com/wp-content/themes/st_refresh/img/st-meta-facebook.png",
+      "publishedAt": "2018-03-16T03:03:53Z"
+    },
+    {
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": "Sara Germano",
+      "title": "Nike Investigates Workplace Complaints, Says No. 2 Executive Resigns",
+      "description": "Nike Inc. said that it had received complaints about workplace behavior and that its No. 2 executive has resigned, setting off a management shuffle at the sportswear giant.",
+      "url": "https://www.wsj.com/articles/nike-investigates-workplace-complaints-says-no-2-executive-resigns-1521153597",
+      "urlToImage": "https://images.wsj.net/im-4138/social",
+      "publishedAt": "2018-03-16T00:58:00Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Tampabay.com"
+      },
+      "author": "Divya Kumar",
+      "title": "In bankruptcy, Winn-Dixie will close six Tampa Bay stores.",
+      "description": "Winn-Dixie\u0092s parent company announced Thursday that it plans to file for Chapter 11 bankruptcy reorganization and close 94",
+      "url": "http://www.tampabay.com/news/business/In-bankruptcy-Winn-Dixie-will-close-six-Tampa-Bay-stores-_166423174",
+      "urlToImage": "http://www.tampabay.com/storyimage/HI/20180315/ARTICLE/303159381/AR/0/AR-303159381.jpg",
+      "publishedAt": "2018-03-16T00:12:05Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Cbslocal.com"
+      },
+      "author": "http://www.facebook.com/cbsdenver",
+      "title": "Plastic Particles Found In Bottled Water, Study Finds",
+      "description": "A study examining 11 brands of bottled water sold around the world has found that nearly every sample tested was contaminated by plastic particles.",
+      "url": "http://denver.cbslocal.com/2018/03/15/plastic-particles-bottled-water/",
+      "urlToImage": "https://cbsdenver.files.wordpress.com/2018/03/gettyimages-75817758.jpg?w=1500",
+      "publishedAt": "2018-03-15T19:39:30Z"
+    },
+    {
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": "Alison Sider",
+      "title": "Federal Regulators End Key Tax Benefit for Certain Pipeline Companies",
+      "description": "Federal regulators eliminated a key tax benefit for some pipeline companies, a move that could force some pipelines to lower their rates and make it even more difficult for the struggling sector to raise money for new projects.",
+      "url": "https://www.wsj.com/articles/federal-regulators-end-key-tax-benefit-for-certain-pipeline-companies-1521140209",
+      "urlToImage": "https://images.wsj.net/im-4115/social",
+      "publishedAt": "2018-03-15T18:58:40Z"
+    },
+    {
+      "source": {
+        "id": "recode",
+        "name": "Recode"
+      },
+      "author": "Theodore Schleifer",
+      "title": "The four most interesting things Peter Thiel said today in New York",
+      "description": "Peter Thiel sharply criticized Silicon Valley culture and defended why exactly he was leaving it in an interview on Thursday that touched on all of the investor’s most controversial beliefs.",
+      "url": "https://www.recode.net/2018/3/15/17125924/peter-thiel-los-angeles-gawker-silicon-valley-facebook-politics-trump-reelection",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/1Sn9HhhXSflQAGB41D038PGjlIE=/0x0:4426x2317/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10433021/629845074.jpg.jpg",
+      "publishedAt": "2018-03-15T18:42:00Z"
+    },
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "Max Nisen",
+      "title": "Theranos and the Problem With Booming Biotech Funding",
+      "description": "The disgraced blood-testing firm is an outlier, but points to broader excesses that could still hurt investors.",
+      "url": "https://www.bloomberg.com/news/articles/2018-03-15/theranos-and-the-problem-with-booming-biotech-funding",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iyveYupbVGNc/v0/1200x802.jpg",
+      "publishedAt": "2018-03-15T18:27:21Z"
+    },
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "Michael Sasso",
+      "title": "Outcry Over Dead Dog Intensifies Pressure on United CEO",
+      "description": "United Airlines has managed a feat to which no company aspires -- outraging the world twice in less than a year. The death of a puppy in an overhead bin this week raises anew the question of whether the carrier’s CEO can hang onto his job.",
+      "url": "https://www.bloomberg.com/news/articles/2018-03-15/dead-dog-outcry-intensifies-pressure-on-united-ceo-oscar-munoz",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i9K4Ir2OPPn4/v0/1200x800.jpg",
+      "publishedAt": "2018-03-15T11:30:18Z"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Billboard.com"
+      },
+      "author": null,
+      "title": "iHeartMedia's Chapter 11 Filing: What Happens Next for the Radio Giant",
+      "description": "iHeartMedia and some of its subsidiaries filed for Chapter 11 protection last night after reaching a pre-packaged agreement with its principle creditors that will apparently see the company cut its debt in half to $10 billion.",
+      "url": "https://www.billboard.com/articles/news/8247540/iheartmedias-chapter-11-filing-what-happens-next",
+      "urlToImage": "https://www.billboard.com/files/media/iHeartMedia_Logo-billboard-1548.jpg",
+      "publishedAt": "2018-03-15T08:24:56Z"
+    }
+  ]
+}
