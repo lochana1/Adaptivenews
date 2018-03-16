@@ -88,26 +88,20 @@ export class SpeakerListPage {
     actionSheet.present();
   }
 
-  openContact(speaker: any) {
+  gotoLink(speaker: any) {
     let mode = this.config.get('mode');
 
     let actionSheet = this.actionSheetCtrl.create({
-      title: 'Contact ' + speaker.name,
+      title: 'Link about ' + speaker.name,
       buttons: [
         {
-          text: `Email ( ${speaker.email} )`,
+          text: `Link ( ${speaker.email} )`,
           icon: mode !== 'ios' ? 'mail' : null,
           handler: () => {
             window.open('mailto:' + speaker.email);
           }
         } as ActionSheetButton,
-        {
-          text: `Call ( ${speaker.phone} )`,
-          icon: mode !== 'ios' ? 'call' : null,
-          handler: () => {
-            window.open('tel:' + speaker.phone);
-          }
-        } as ActionSheetButton
+
       ]
     } as ActionSheetOptions);
 
