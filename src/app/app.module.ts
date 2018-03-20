@@ -15,7 +15,6 @@ import { ConferenceApp } from './app.component';
 import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
 
-import { SessionDetailPage } from '../pages/session-detail/session-detail';
 import { SignupPage } from '../pages/signup/signup';
 import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
@@ -33,7 +32,6 @@ import { BusinessnewsProvider } from '../providers/businessnews/businessnews';
     ConferenceApp,
     AccountPage,
     LoginPage,
-    SessionDetailPage,
     SignupPage,
     SpeakerDetailPage,
     SpeakerListPage,
@@ -47,7 +45,6 @@ import { BusinessnewsProvider } from '../providers/businessnews/businessnews';
     IonicModule.forRoot(ConferenceApp, {}, {
       links: [
         { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
-        { component: SessionDetailPage, name: 'SessionDetail', segment: 'sessionDetail/:sessionId' },
         { component: SpeakerListPage, name: 'SpeakerList', segment: 'speakerList' },
         { component: SpeakerDetailPage, name: 'SpeakerDetail', segment: 'speakerDetail/:speakerId' },
         { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
@@ -63,7 +60,6 @@ import { BusinessnewsProvider } from '../providers/businessnews/businessnews';
     ConferenceApp,
     AccountPage,
     LoginPage,
-    SessionDetailPage,
     SignupPage,
     SpeakerDetailPage,
     SpeakerListPage,

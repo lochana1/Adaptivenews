@@ -11,8 +11,6 @@
   <ion-list [virtualScroll]="speakers">
     <ion-grid fixed>
       <ion-row align-items-stretch>
-
-
         <ion-col col-12 col-md-6 align-self-stretch align-self-center *virtualItem="let speaker" approxItemHeight="457px">
           <button ion-item *ngFor="let news of bnews.articles" >
           <ion-card class="speaker-card">
@@ -21,51 +19,27 @@
                 <ion-avatar item-start>
                   <img [src]="speaker.profilePic" alt="Speaker profile pic">
                 </ion-avatar>
-                <!--{{speaker.name}}-->
                 {{news.title}}
               </button>
             </ion-card-header>
-
               <ion-card-content padding text-wrap class="outer-content">
                 <ion-list>
-
-                  <h3>Author: {{news.author}}</h3>
-                  <p>Description: {{news.description}}</p>
-              </ion-list>
+                  <button ion-item (click)="goToSpeakerDetail()">
+                    <h3>Author: {{news.author}}</h3>
+                    <p>Description: {{news.description}}</p>
+                  </button>
+                </ion-list>
               </ion-card-content>
-
-
-
-            <ion-row no-padding>
-              <button ion-button clear small color="primary" icon-start >
+            <ion-row padding>
+              <button ion-button clear small color="primary" icon-start (click)="likeNews(new.id)">
                 <ion-icon name="like"></ion-icon>
                 Like
               </button>
-              <button ion-button clear small color="primary" icon-start >
+              <button ion-button clear small color="primary" icon-start (click)="dislikeNews(new.id)">
                 <ion-icon name="dislike"></ion-icon>
                 Dislike
               </button>
-              <button ion-button clear small color="primary" icon-start >
-                <ion-icon name="nothing"></ion-icon>
-                Dont Care
-              </button>
             </ion-row>
-            <ion-row padding-vertical="2">
-
-            </ion-row>
-
-            <ion-row no-padding>
-
-                <button ion-button clear small color="primary" icon-start (click)="goToSpeakerTwitter(speaker)">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                  Tweet
-                </button>
-                <button  ion-button clear small color="primary" icon-start (click)="openSpeakerShare(speaker)">
-                  <ion-icon name='share-alt'></ion-icon>
-                  Share
-                </button>
-            </ion-row>
-
           </ion-card>
           </button>
 

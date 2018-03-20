@@ -26,8 +26,4 @@ export class SpeakerDetailPage {
     });
 
   }
-
-  goToSessionDetail(session: any) {
-    this.navCtrl.push('SessionDetailPage', { sessionId: session.id });
-  }
 }
