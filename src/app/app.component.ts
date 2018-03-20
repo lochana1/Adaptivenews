@@ -19,6 +19,7 @@ import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 
+
 export interface PageInterface {
   title: string;
   name: string;
