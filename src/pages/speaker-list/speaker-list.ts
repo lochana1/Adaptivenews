@@ -65,11 +65,11 @@ export class SpeakerListPage {
     this.navCtrl.push(SpeakerDetailPage, { speakerId: speaker.id });
   }
 
-  likeNews(speaker: any) {
+  likeNews() {
     console.log("speaker name is")
   }
 
-  dislikeNews(speaker: any) {
+  dislikeNews() {
     console.log("speaker name is")
   }
 
