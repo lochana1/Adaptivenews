@@ -15,7 +15,7 @@
           <button ion-item *ngFor="let news of bnews.articles" >
           <ion-card class="speaker-card">
             <ion-card-header>
-              <button ion-item detail-none (click)="goToSpeakerDetail(speaker)">
+              <button ion-item detail-none (click)="Gotourl()">
                 <ion-avatar item-start>
                   <img [src]="speaker.profilePic" alt="Speaker profile pic">
                 </ion-avatar>
@@ -31,11 +31,11 @@
                 </ion-list>
               </ion-card-content>
             <ion-row padding>
-              <button ion-button clear small color="primary" icon-start (click)="likeNews(new.id)">
+              <button ion-button clear small color="primary" icon-start (click)="likeNews()">
                 <ion-icon name="like"></ion-icon>
                 Like
               </button>
-              <button ion-button clear small color="primary" icon-start (click)="dislikeNews(new.id)">
+              <button class = "dislikenews" ion-button clear small color="primary" icon-start (click)= dislikeNews()>
                 <ion-icon name="dislike"></ion-icon>
                 Dislike
               </button>

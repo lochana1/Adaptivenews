@@ -65,15 +65,22 @@ export class SpeakerListPage {
     this.navCtrl.push(SpeakerDetailPage, { speakerId: speaker.id });
   }
 
-  likeNews(speaker: any) {
-    console.log("speaker name is")
+  likeNews() {
+    console.log("speaker name is Liked");
   }
 
-  dislikeNews(speaker: any) {
-    console.log("speaker name is")
+  dislikeNews() {
+    console.log("speaker name is Disliked");
+
+
+
+  }
+
+  Gotourl(){
+    console.log("Opening url");
   }
 
   // removeItem() {
-    
+
   // }
 }
