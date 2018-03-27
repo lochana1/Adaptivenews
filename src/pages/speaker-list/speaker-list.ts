@@ -66,19 +66,22 @@ export class SpeakerListPage {
   }
 
   likeNews() {
+
     console.log("speaker name is Liked");
   }
 
   dislikeNews() {
     console.log("speaker name is Disliked");
 
-
-
   }
 
   Gotourl(){
     console.log("Opening url");
+
+    console.log("speaker name is")
   }
+
+
 
   // removeItem() {
 
