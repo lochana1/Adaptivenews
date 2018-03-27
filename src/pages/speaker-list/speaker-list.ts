@@ -44,9 +44,6 @@ export class SpeakerListPage {
   ) {}
 
   ionViewDidLoad() {
-    this.confData.getSpeakers().subscribe((speakers: any[]) => {
-      this.speakers = speakers;
-    });
 
     console.log("Inside ionviewDisLoad");
 

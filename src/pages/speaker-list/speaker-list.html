@@ -7,44 +7,96 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="outer-content speaker-list">
-  <ion-list [virtualScroll]="speakers">
-    <ion-grid fixed>
-      <ion-row align-items-stretch>
-        <ion-col col-12 col-md-6 align-self-stretch align-self-center *virtualItem="let speaker" approxItemHeight="457px">
-          <button ion-item *ngFor="let news of bnews.articles" >
-          <ion-card class="speaker-card">
-            <ion-card-header>
-              <button ion-item detail-none (click)="Gotourl()">
-                <ion-avatar item-start>
-                  <img [src]="speaker.profilePic" alt="Speaker profile pic">
-                </ion-avatar>
-                {{news.title}}
-              </button>
-            </ion-card-header>
-              <ion-card-content padding text-wrap class="outer-content">
-                <ion-list>
-                  <button ion-item (click)="goToSpeakerDetail()">
-                    <h3>Author: {{news.author}}</h3>
-                    <p>Description: {{news.description}}</p>
-                  </button>
-                </ion-list>
-              </ion-card-content>
-            <ion-row padding>
-              <button ion-button clear small color="primary" icon-start (click)="likeNews()">
-                <ion-icon name="like"></ion-icon>
-                Like
-              </button>
-              <button class = "dislikenews" ion-button clear small color="primary" icon-start (click)= dislikeNews()>
-                <ion-icon name="dislike"></ion-icon>
-                Dislike
-              </button>
-            </ion-row>
-          </ion-card>
-          </button>
 
-        </ion-col>
+
+
+
+<ion-content class="outer-content speaker-list">
+<ion-list [virtualScroll]="bnews.articles" approxItemHeight="450px">
+  <ion-grid fixed>
+
+
+  <ion-item *virtualItem="let news">
+
+
+    <ion-card class = "searchList">
+      <ion-card-title text-wrap align-items-stretch padding>{{news.title}}</ion-card-title>
+
+      <ion-card-content padding text-wrap class="outer-content">
+      <ion-list>
+      <button ion-item (click)="goToSpeakerDetail()">
+      <h3>Author: {{news.author}}</h3>
+      <p>Description: {{news.description}}</p>
+      </button>
+      </ion-list>
+      </ion-card-content>
+
+
+
+
+      <ion-row padding>
+      <button ion-button clear small color="primary" icon-start (click)="likeNews()">
+      <ion-icon name="like"></ion-icon>
+      Like
+      </button>
+      <button class = "dislikenews" ion-button clear small color="primary" icon-start (click)= dislikeNews()>
+      <ion-icon name="dislike"></ion-icon>
+      Dislike
+      </button>
       </ion-row>
-    </ion-grid>
-  </ion-list>
+
+    </ion-card>
+
+
+  </ion-item>
+  </ion-grid>
+
+</ion-list>
 </ion-content>
+
+
+
+
+
+
+<!--<ion-content class="outer-content speaker-list">-->
+  <!--<ion-list [virtualScroll]="speakers">-->
+    <!--<ion-grid fixed>-->
+      <!--<ion-row align-items-stretch>-->
+        <!--<ion-col col-12 col-md-6 align-self-stretch align-self-center *virtualItem="let speaker" approxItemHeight="457px">-->
+          <!--<button ion-item *ngFor="let news of bnews.articles" >-->
+          <!--<ion-card class="speaker-card">-->
+            <!--<ion-card-header>-->
+              <!--<button ion-item detail-none (click)="Gotourl()">-->
+                <!--<ion-avatar item-start>-->
+                  <!--<img [src]="speaker.profilePic" alt="Speaker profile pic">-->
+                <!--</ion-avatar>-->
+                <!--{{news.title}}-->
+              <!--</button>-->
+            <!--</ion-card-header>-->
+              <!--<ion-card-content padding text-wrap class="outer-content">-->
+                <!--<ion-list>-->
+                  <!--<button ion-item (click)="goToSpeakerDetail()">-->
+                    <!--<h3>Author: {{news.author}}</h3>-->
+                    <!--<p>Description: {{news.description}}</p>-->
+                  <!--</button>-->
+                <!--</ion-list>-->
+              <!--</ion-card-content>-->
+            <!--<ion-row padding>-->
+              <!--<button ion-button clear small color="primary" icon-start (click)="likeNews()">-->
+                <!--<ion-icon name="like"></ion-icon>-->
+                <!--Like-->
+              <!--</button>-->
+              <!--<button class = "dislikenews" ion-button clear small color="primary" icon-start (click)= dislikeNews()>-->
+                <!--<ion-icon name="dislike"></ion-icon>-->
+                <!--Dislike-->
+              <!--</button>-->
+            <!--</ion-row>-->
+          <!--</ion-card>-->
+          <!--</button>-->
+
+        <!--</ion-col>-->
+      <!--</ion-row>-->
+    <!--</ion-grid>-->
+  <!--</ion-list>-->
+<!--</ion-content>-->
