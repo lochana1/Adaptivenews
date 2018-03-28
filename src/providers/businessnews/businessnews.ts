@@ -1,6 +1,6 @@
 // import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 import {Observable} from "rxjs/Observable";
 /*
@@ -11,7 +11,8 @@ import {Observable} from "rxjs/Observable";
 */
 @Injectable()
 export class BusinessnewsProvider {
-  bnewsuri : any = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fcd148d3e7a44031b2f7ef24590d12f8";
+  bnewsuri : any = "http://52.211.224.36:8080/news";
+  // bnewsuri : any = "https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=fcd148d3e7a44031b2f7ef24590d12f8";
   data : any;
 
   constructor(public http: Http) {
@@ -21,15 +22,19 @@ export class BusinessnewsProvider {
   businessnews() {
 
     console.log('Inside businessnews provider');
-    this.http.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fcd148d3e7a44031b2f7ef24590d12f8").map(res => res.json()).subscribe(data => {
-      console.log(data)
-    });
+    // let headers = new Headers();
+    // let options = new ({ headers:headers});
+    // let obj: any ={};
+    // headers.append("Dummy", "Dummy");
 
+    this.http.get(this.bnewsuri, ).map(res=>res.json()).subscribe(data => {
+
+      console.log(data);
+    });
 
     return new Promise((resolve, reject) => {
 
-
-      this.http.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fcd148d3e7a44031b2f7ef24590d12f8").subscribe(res => {
+      this.http.get(this.bnewsuri ).subscribe(res => {
         resolve(res.json());
       }, (err) => {
         reject(err.json());
@@ -38,9 +43,10 @@ export class BusinessnewsProvider {
   }
     load(): any {
       if (this.data) {
+        console.log("Data", this.data);
         return Observable.of(this.data);
       } else {
-        return this.http.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fcd148d3e7a44031b2f7ef24590d12f8')
+        return this.http.get(this.bnewsuri)
           .map(this.processData, this);
       }
     }

@@ -12,7 +12,7 @@
 
 
 <ion-content class="outer-content speaker-list">
-<ion-list [virtualScroll]="bnews.articles" approxItemHeight="450px">
+<ion-list [virtualScroll]="bnews" approxItemHeight="450px">
   <ion-grid fixed>
 
 
@@ -25,7 +25,7 @@
       <ion-card-content padding text-wrap class="outer-content">
       <ion-list>
       <button ion-item (click)="goToSpeakerDetail()">
-      <h3>Author: {{news.author}}</h3>
+      <h3>Category: {{news.Category}}</h3>
       <p>Description: {{news.description}}</p>
       </button>
       </ion-list>

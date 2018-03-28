@@ -25,6 +25,7 @@ import { TutorialPage } from '../pages/tutorial/tutorial';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { BusinessnewsProvider } from '../providers/businessnews/businessnews';
+import { RandomnewsProvider } from '../providers/randomnews/randomnews';
 
 
 @NgModule({
@@ -73,7 +74,8 @@ import { BusinessnewsProvider } from '../providers/businessnews/businessnews';
     UserData,
     InAppBrowser,
     SplashScreen,
-    BusinessnewsProvider
+    BusinessnewsProvider,
+    RandomnewsProvider
   ]
 })
 export class AppModule { }

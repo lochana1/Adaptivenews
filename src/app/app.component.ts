@@ -14,10 +14,12 @@ import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
+import { RandomnewsPage } from '../pages/randomnews/randomnews';
 
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
+
 
 
 export interface PageInterface {
@@ -44,13 +46,13 @@ export class ConferenceApp {
   // the login page disables the left menu
   appPages: PageInterface[] = [
 
-    { title: 'NewsRoom', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' }
+    { title: 'NewsRoom', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
+    { title: 'RandomNews', name: 'RandomnewsPage', component: RandomnewsPage, icon: 'paper' }
 
 
   ];
   loggedInPages: PageInterface[] = [
     { title: 'Account', name: 'AccountPage', component: AccountPage, icon: 'person' },
-
     { title: 'Logout', name: 'TabsPage', component: TabsPage, icon: 'log-out', logsOut: true }
   ];
   loggedOutPages: PageInterface[] = [

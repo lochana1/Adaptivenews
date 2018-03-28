@@ -48,16 +48,21 @@ export class SpeakerListPage {
     console.log("Inside ionviewDisLoad");
 
 
-
     // this.http.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fcd148d3e7a44031b2f7ef24590d12f8").map(res => res.json()).subscribe((bndata: any[])=> {
     //   this.bnews = bndata;
     // });
     this.businessnews.businessnews().then((value: any[]) => {
-      this.bnews =  value;
+      this.bnews = value;
 
     })
+      .catch((err) => {
+        console.log("Error in getting getting news data:")
+        console.log(err);
+      });
 
   }
+
+
   goToSpeakerDetail(speaker: any) {
     this.navCtrl.push(SpeakerDetailPage, { speakerId: speaker.id });
   }
