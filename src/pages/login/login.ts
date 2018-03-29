@@ -5,10 +5,13 @@ import { NavController } from 'ionic-angular';
 
 import { UserData } from '../../providers/user-data';
 
-import { UserOptions } from '../../interfaces/user-options';
+// import { UserOptions } from '../../interfaces/user-options';
 
 import { TabsPage } from '../tabs-page/tabs-page';
 import { SignupPage } from '../signup/signup';
+import {UserLogin} from "../../interfaces/user-login";
+import { NewsanduserProvider } from '../../providers/newsanduser/newsanduser';
+import {SpeakerListPage} from "../speaker-list/speaker-list";
 
 
 @Component({
@@ -16,16 +19,37 @@ import { SignupPage } from '../signup/signup';
   templateUrl: 'login.html'
 })
 export class LoginPage {
-  login: UserOptions = { username: '', password: '' };
+  login: UserLogin = { username: '', password: '' };
   submitted = false;
+  responseData: any;
 
-  constructor(public navCtrl: NavController, public userData: UserData) { }
+  constructor(public navCtrl: NavController,
+              public userData: UserData,
+              public auth :NewsanduserProvider) { }
 
   onLogin(form: NgForm) {
     this.submitted = true;
-
+    let type: any = "/signup/" + this.login.username + "/" + this.login.password;
     if (form.valid) {
+
       this.userData.login(this.login.username);
+      this.userData.setpwd(this.login.password);
+      this.auth
+        .postData(type)
+        .then(
+          (result) => {
+            this.responseData = result;
+            console.log(this.responseData);
+            this.navCtrl.setRoot(SpeakerListPage);
+
+          })
+        .catch((err) => {
+          console.log("Error in signing up:")
+          console.log(err);
+        });
+
+
+
       this.navCtrl.push(TabsPage);
     }
   }

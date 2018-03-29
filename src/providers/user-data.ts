@@ -52,6 +52,16 @@ export class UserData {
     this.storage.set('username', username);
   };
 
+  setpwd(password: string): void {
+    this.storage.set('password', password);
+  };
+
+  getpwd(): Promise<string> {
+    return this.storage.get('password').then((value) => {
+      return value;
+    });
+  };
+
   getUsername(): Promise<string> {
     return this.storage.get('username').then((value) => {
       return value;

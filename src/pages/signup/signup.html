@@ -32,6 +32,25 @@
 			<p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>
 				Password is required
 			</p>
+
+      <ion-item>
+        <ion-label stacked color="primary">Age</ion-label>
+        <ion-input [(ngModel)]="signup.age" name="age" type="text" #age="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>
+        Age is required
+      </p>
+
+      <ion-item>
+        <ion-label stacked color="primary">Gender</ion-label>
+        <ion-input [(ngModel)]="signup.gender" name="gender" type="text" #gender="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <p ion-text [hidden]="gender.valid || submitted == false" color="danger" padding-left>
+        Gender is required
+      </p>
+
 		</ion-list>
 
 		<div padding>

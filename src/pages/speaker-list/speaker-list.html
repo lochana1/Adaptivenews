@@ -35,11 +35,11 @@
 
 
       <ion-row padding>
-      <button ion-button clear small color="primary" icon-start (click)="likeNews()">
+      <button class="likenews" ion-button clear small color="primary" icon-start (click)="likeNews(news)" [disabled]="disableButton">
       <ion-icon name="like"></ion-icon>
       Like
       </button>
-      <button class = "dislikenews" ion-button clear small color="primary" icon-start (click)= dislikeNews()>
+      <button class = "dislikenews" ion-button clear small color="primary" icon-start (click)= "dislikeNews(news)" [disabled]="disableButton">
       <ion-icon name="dislike"></ion-icon>
       Dislike
       </button>

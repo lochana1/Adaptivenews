@@ -24,7 +24,7 @@ import { TutorialPage } from '../pages/tutorial/tutorial';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
-import { BusinessnewsProvider } from '../providers/businessnews/businessnews';
+import { NewsanduserProvider } from '../providers/newsanduser/newsanduser';
 import { RandomnewsProvider } from '../providers/randomnews/randomnews';
 
 
@@ -74,7 +74,7 @@ import { RandomnewsProvider } from '../providers/randomnews/randomnews';
     UserData,
     InAppBrowser,
     SplashScreen,
-    BusinessnewsProvider,
+    NewsanduserProvider,
     RandomnewsProvider
   ]
 })
