@@ -36,8 +36,6 @@ export class SignupPage {
 
       let type: any = "/signup/" + this.signup.username + "/" + this.signup.password + "/" + this.signup.age + "/" + this.signup.gender;
 
-
-
       this.auth
         .postData(type)
         .then(
