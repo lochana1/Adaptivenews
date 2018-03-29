@@ -26,6 +26,7 @@ import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { NewsanduserProvider } from '../providers/newsanduser/newsanduser';
 import { RandomnewsProvider } from '../providers/randomnews/randomnews';
+import { UseradaptPage } from "../pages/useradapt/useradapt";
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { RandomnewsProvider } from '../providers/randomnews/randomnews';
     SpeakerListPage,
     TabsPage,
     TutorialPage,
+    UseradaptPage
 
   ],
   imports: [
@@ -51,6 +53,8 @@ import { RandomnewsProvider } from '../providers/randomnews/randomnews';
         { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
+        { component: UseradaptPage, name: 'UseradaptPage', segment: 'useradapt' },
+
         { component: SignupPage, name: 'SignupPage', segment: 'signup' }
       ]
     }),
@@ -66,6 +70,7 @@ import { RandomnewsProvider } from '../providers/randomnews/randomnews';
     SpeakerListPage,
     TabsPage,
     TutorialPage,
+    UseradaptPage
 
   ],
   providers: [

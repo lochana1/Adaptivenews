@@ -19,9 +19,9 @@ export class NewsanduserProvider {
 
   }
 
-  randomnews(type) {
+  getData(type) {
 
-    type = "/news";
+
     console.log('Inside newsanduser provider');
     // let headers = new Headers();
     // let options = new ({ headers:headers});

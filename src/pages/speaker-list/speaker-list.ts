@@ -66,7 +66,8 @@ export class SpeakerListPage {
     // this.http.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fcd148d3e7a44031b2f7ef24590d12f8").map(res => res.json()).subscribe((bndata: any[])=> {
     //   this.bnews = bndata;
     // });
-    this.news.randomnews(type).then((value: any[]) => {
+
+    this.news.getData(type).then((value: any[]) => {
       this.bnews = value;
 
     })
