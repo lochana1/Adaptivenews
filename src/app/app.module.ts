@@ -27,6 +27,7 @@ import { UserData } from '../providers/user-data';
 import { NewsanduserProvider } from '../providers/newsanduser/newsanduser';
 import { RandomnewsProvider } from '../providers/randomnews/randomnews';
 import { UseradaptPage } from "../pages/useradapt/useradapt";
+import { ShowMyInterestPage } from "../pages/show-my-interest/show-my-interest";
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { UseradaptPage } from "../pages/useradapt/useradapt";
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    UseradaptPage
+    UseradaptPage,
+    ShowMyInterestPage
 
   ],
   imports: [
@@ -53,8 +55,8 @@ import { UseradaptPage } from "../pages/useradapt/useradapt";
         { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
+        { component: ShowMyInterestPage, name: 'ShowMyInterestPage', segment: 'account' },
         { component: UseradaptPage, name: 'UseradaptPage', segment: 'useradapt' },
-
         { component: SignupPage, name: 'SignupPage', segment: 'signup' }
       ]
     }),
@@ -70,7 +72,8 @@ import { UseradaptPage } from "../pages/useradapt/useradapt";
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    UseradaptPage
+    UseradaptPage,
+    ShowMyInterestPage
 
   ],
   providers: [
