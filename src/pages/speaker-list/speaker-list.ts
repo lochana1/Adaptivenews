@@ -90,7 +90,7 @@ export class SpeakerListPage {
     let type:any = "/learning/like/"+this.userName +"/"+this.password+"/"+ news.Category;
     console.log("Sending like", type);
     this.news
-      .postData(type)
+      .getData(type)
       .then(
         (result) => {
           this.responseData = result;
@@ -112,7 +112,7 @@ export class SpeakerListPage {
     let type:any = "/learning/dislike/"+this.userName +"/"+this.password+"/"+ news.Category;
     console.log("Sending Dislike", type);
     this.news
-      .postData(type)
+      .getData(type)
       .then(
         (result) => {
           this.responseData = result;

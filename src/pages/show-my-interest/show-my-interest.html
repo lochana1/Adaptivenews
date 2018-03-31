@@ -18,12 +18,26 @@
 
 <ion-content>
 
-    <ion-card>
+  <ion-item padding>
+    <ion-label>Learning Rate</ion-label>
+
+    <ion-select [(ngModel)]="learningrate">
+      <ion-option value="h">High</ion-option>
+      <ion-option value="m">Medium</ion-option>
+      <ion-option value="l">Low</ion-option>
+    </ion-select>
+  </ion-item>
+
+    <ion-card padding class ="graph-card">
       <ion-card-header>
-        My Interests:
+        My Current Interests:
       </ion-card-header>
       <ion-card-content>
         <canvas #barCanvas></canvas>
       </ion-card-content>
     </ion-card>
+
+
+
 </ion-content>
+

@@ -35,7 +35,7 @@ export class LoginPage {
       this.userData.login(this.login.username);
       this.userData.setpwd(this.login.password);
       this.auth
-        .postData(type)
+        .getData(type)
         .then(
           (result) => {
             this.responseData = result;

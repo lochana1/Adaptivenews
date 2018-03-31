@@ -28,6 +28,7 @@ export class ShowMyInterestPage {
     password:any;
     weights:any;
     type:any;
+    learningrate : any = "h";
   constructor(public navCtrl: NavController, public navParams: NavParams, public userData : UserData, private news: NewsanduserProvider) {
   }
 
