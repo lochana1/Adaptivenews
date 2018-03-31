@@ -29,7 +29,7 @@ export class LoginPage {
 
   onLogin(form: NgForm) {
     this.submitted = true;
-    let type: any = "/signup/" + this.login.username + "/" + this.login.password;
+    let type: any = "/login/" + this.login.username + "/" + this.login.password;
     if (form.valid) {
 
       this.userData.login(this.login.username);
