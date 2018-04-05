@@ -44,9 +44,14 @@ export class SpeakerListPage {
     public inAppBrowser: InAppBrowser,
     private news: NewsanduserProvider,
     public http: Http,
-    public userData : UserData
-
+    public userData : UserData,
+    private iab: InAppBrowser
   ) {}
+
+  openUrl(news) {
+    const browser = this.iab.create(news.url);
+    browser.show()
+  }
 
   ionViewDidLoad() {
     console.log("Inside ionviewDisLoad");
@@ -82,7 +87,6 @@ export class SpeakerListPage {
           this.responseData = result;
           console.log(this.responseData);
           let index = this.bnews.indexOf(news);
-
           if(index > -1){
             this.bnews.splice(index, 1);
           }
