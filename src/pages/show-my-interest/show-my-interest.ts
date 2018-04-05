@@ -28,8 +28,19 @@ export class ShowMyInterestPage {
     password:any;
     weights:any;
     type:any;
-    learningrate : any = "h";
+    learningrate : any;
   constructor(public navCtrl: NavController, public navParams: NavParams, public userData : UserData, private news: NewsanduserProvider) {
+  }
+
+  onModelChange(value){
+    this.type = "/learning/setlearning/"+this.userName +"/"+this.password + "/" + value;
+    this.news.getData(this.type).then((value: any[]) => {
+        console.log(value)
+    })
+    .catch((err) => {
+      console.log("Error in getting weights data:")
+      console.log(err);
+    });
   }
 
   ionViewDidLoad() {
@@ -79,31 +90,11 @@ export class ShowMyInterestPage {
             }
           });
 
-          this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {
- 
-            type: 'doughnut',
-            data: {
-                labels: ["Sports", "Business", "Entertainment", "Politics", "Technology"],
-                datasets: [{
-                    label: '# of Interest',
-                    data: [this.weights.sports*100, this.weights.business*100, this.weights.entertainment*100, this.weights.politics*100, this.weights.technology*100],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)'
-                    ],
-                    hoverBackgroundColor: [
-                        "#FF6384",
-                        "#36A2EB",
-                        "#FFCE56",
-                        "#FF6384",
-                        "#36A2EB"
-                    ]
-                }]
-            }
-          });
+          this.type = "/learning/getlearning/"+this.userName +"/"+this.password;
+          this.news.getData(this.type).then((value: any[]) => {
+              console.log(value);
+              this.learningrate = value;
+          })
         })
         .catch((err) => {
           console.log("Error in getting weights data:")

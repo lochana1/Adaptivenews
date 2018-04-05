@@ -21,10 +21,10 @@
   <ion-item padding>
     <ion-label>Learning Rate</ion-label>
 
-    <ion-select [(ngModel)]="learningrate">
-      <ion-option value="h">High</ion-option>
-      <ion-option value="m">Medium</ion-option>
-      <ion-option value="l">Low</ion-option>
+    <ion-select [(ngModel)]="learningrate" (ngModelChange)="onModelChange($event)">
+      <ion-option value="high">High</ion-option>
+      <ion-option value="medium">Medium</ion-option>
+      <ion-option value="low">Low</ion-option>
     </ion-select>
   </ion-item>
 

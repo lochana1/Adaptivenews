@@ -15,9 +15,6 @@ import { TutorialPage } from '../pages/tutorial/tutorial';
 
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { RandomnewsPage } from '../pages/randomnews/randomnews';
-import { UseradaptPage } from "../pages/useradapt/useradapt";
-
-
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { ShowMyInterestPage } from "../pages/show-my-interest/show-my-interest";
@@ -49,7 +46,6 @@ export class ConferenceApp {
 
     { title: 'NewsRoom', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
     { title: 'RandomNews', name: 'RandomnewsPage', component: RandomnewsPage, icon: 'paper' },
-    { title: 'UseradaptPage', name: 'UseradaptPage', component: UseradaptPage, icon: 'copy' },
     { title: 'ShowMyInterestPage', name: 'ShowMyInterestPage', component: ShowMyInterestPage, icon: 'copy' }
 
 
