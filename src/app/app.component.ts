@@ -45,7 +45,7 @@ export class ConferenceApp {
   appPages: PageInterface[] = [
 
     { title: 'NewsRoom', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
-    { title: 'RandomNews', name: 'RandomnewsPage', component: RandomnewsPage, icon: 'paper' },
+    { title: 'Explore', name: 'RandomnewsPage', component: RandomnewsPage, icon: 'paper' },
     { title: 'ShowMyInterestPage', name: 'ShowMyInterestPage', component: ShowMyInterestPage, icon: 'copy' }
 
 

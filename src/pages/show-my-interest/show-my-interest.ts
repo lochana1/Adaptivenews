@@ -60,7 +60,7 @@ export class ShowMyInterestPage {
                 labels: ["Sports", "Business", "Entertainment", "Politics", "Technology"],
                 datasets: [{
                     label: '# of Interest',
-                    data: [this.weights.sports*100, this.weights.business*100, this.weights.entertainment*100, this.weights.politics*100, this.weights.technology*100],
+                    data: [this.weights.sports, this.weights.business, this.weights.entertainment, this.weights.politics, this.weights.technology],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',

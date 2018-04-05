@@ -18,6 +18,8 @@ import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
+import { RandomnewsPage } from '../pages/randomnews/randomnews';
+import { ShowMyInterestPage } from "../pages/show-my-interest/show-my-interest";
 import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 
@@ -25,8 +27,7 @@ import { TutorialPage } from '../pages/tutorial/tutorial';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { NewsanduserProvider } from '../providers/newsanduser/newsanduser';
-import { RandomnewsProvider } from '../providers/randomnews/randomnews';
-import { ShowMyInterestPage } from "../pages/show-my-interest/show-my-interest";
+
 
 
 @NgModule({
@@ -39,8 +40,8 @@ import { ShowMyInterestPage } from "../pages/show-my-interest/show-my-interest";
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    ShowMyInterestPage
-
+    ShowMyInterestPage,
+    RandomnewsPage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +55,8 @@ import { ShowMyInterestPage } from "../pages/show-my-interest/show-my-interest";
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
         { component: ShowMyInterestPage, name: 'ShowMyInterestPage', segment: 'account' },
-        { component: SignupPage, name: 'SignupPage', segment: 'signup' }
+        { component: SignupPage, name: 'SignupPage', segment: 'signup' },
+        { component: RandomnewsPage, name: 'RandomnewsPage', segment: 'account' }
       ]
     }),
     IonicStorageModule.forRoot()
@@ -69,8 +71,8 @@ import { ShowMyInterestPage } from "../pages/show-my-interest/show-my-interest";
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    ShowMyInterestPage
-
+    ShowMyInterestPage,
+    RandomnewsPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
@@ -79,7 +81,6 @@ import { ShowMyInterestPage } from "../pages/show-my-interest/show-my-interest";
     InAppBrowser,
     SplashScreen,
     NewsanduserProvider,
-    RandomnewsProvider
   ]
 })
 export class AppModule { }

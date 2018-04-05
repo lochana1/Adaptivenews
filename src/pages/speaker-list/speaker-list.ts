@@ -8,21 +8,10 @@ import {
   NavController
 } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
-
 import { ConferenceData } from '../../providers/conference-data';
-
 import { SpeakerDetailPage } from '../speaker-detail/speaker-detail';
 import { NewsanduserProvider } from '../../providers/newsanduser/newsanduser';
 import {UserData} from "../../providers/user-data";
-
-// TODO remove
-export interface ActionSheetButton {
-  text?: string;
-  role?: string;
-  icon?: string;
-  cssClass?: string;
-  handler?: () => boolean|void;
-};
 
 @Component({
   selector: 'page-speaker-list',
@@ -41,7 +30,6 @@ export class SpeakerListPage {
     public navCtrl: NavController,
     public confData: ConferenceData,
     public config: Config,
-    public inAppBrowser: InAppBrowser,
     private news: NewsanduserProvider,
     public http: Http,
     public userData : UserData,

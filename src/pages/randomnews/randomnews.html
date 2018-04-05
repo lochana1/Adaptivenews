@@ -1,18 +1,38 @@
-<!--
-  Generated template for the RandomnewsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>randomnews</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Explore</ion-title>
   </ion-navbar>
-
 </ion-header>
+<ion-content class="outer-content speaker-list">
+<ion-list [virtualScroll]="bnews" approxItemHeight="450px">
+  <ion-grid fixed>
+  <ion-item *virtualItem="let news">
+    <ion-card class = "searchList">
+      <ion-card-title text-wrap align-items-stretch padding>{{news.title}}</ion-card-title>
+      <ion-card-content padding text-wrap class="outer-content">
+      <ion-list>
+      <button ion-item (click)="openUrl(news)">
+      <h3>Category: {{news.Category}}</h3>
+      <p>Description: {{news.description}}</p>
+      </button>
+      </ion-list>
+      </ion-card-content>
+      <ion-row padding>
+      <button class="likenews" ion-button clear small color="primary" icon-start (click)="likeNews(news)" [disabled]="disableButton">
+      <ion-icon name="like"></ion-icon>
+      Like
+      </button>
+      <button class = "dislikenews" ion-button clear small color="primary" icon-start (click)= "dislikeNews(news)" [disabled]="disableButton">
+      <ion-icon name="dislike"></ion-icon>
+      Dislike
+      </button>
+      </ion-row>
+    </ion-card>
+  </ion-item>
+  </ion-grid>
 
-
-<ion-content padding>
-
+</ion-list>
 </ion-content>
